@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+slices = [23,56,67,23,56,45,89]
+channels = ['FTV','9xm','discovery','9x0','NGC','Vh1','max']
+colors = ('red','blue','green','violet','magenta','black')
+plt.pie(slices , labels = channels ,colors = ['red','blue','green','violet','magenta','brown','cyan'],
+        explode = (0.5,0,0,0,0,0,0) , shadow = 'true' , autopct = '%1.1f%%' , startangle = 90)
+plt.title('pie chart')
+plt.savefig('figure3.png')
+plt.show()
